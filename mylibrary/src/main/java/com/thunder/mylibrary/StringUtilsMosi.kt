@@ -169,7 +169,7 @@ class StringUtilsMosi {
         }
 
 
-        private fun getJavaCardResponseMessage(respCode: String): String {
+        private fun getJavaCardResponseMessage3(respCode: String): String {
             return when (respCode) {
                 "63A0" -> "63 A0: PUK Blocked"
                 "63A1" -> "63 A1: PIN Blocked"
