@@ -20,23 +20,23 @@ class StringUtilsMosi {
             return value.replace("[^0-9]".toRegex(), "")
         }
 
-        fun leftPad(str: String, length: Int, car: Char): String {
+        private fun leftPad(str: String, length: Int, car: Char): String {
             return (str + String.format("%" + length + "s", "").replace(" ", car.toString())).substring(0, length)
         }
 
-        fun rightPad(str: String, length: Int, car: Char): String {
+        private fun rightPad(str: String, length: Int, car: Char): String {
             return (str + String.format("%" + length + "s", "").replace(" ", car.toString())).substring(0, length)
         }
 
-        fun unConcatString(length: Int, value: String): String {
+        private fun unConcatString(length: Int, value: String): String {
             return value.substring(length)
         }
 
-        fun getStringFromWindowsSystem(value: String) {
+        private fun getStringFromWindowsSystem(value: String) {
 
         }
 
-        fun getBillAmount(billPaymentId: String): String {
+        private fun getBillAmount(billPaymentId: String): String {
             var amount = ""
             var temp = ""
             if (billPaymentId.isNullOrEmpty() || billPaymentId.length < 6 || billPaymentId.length > 13)
