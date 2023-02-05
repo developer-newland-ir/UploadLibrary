@@ -12,32 +12,31 @@ import androidx.annotation.Keep
 //https://commons.apache.org/proper/commons-lang/javadocs/api-2.6/org/apache/commons/lang/StringUtils.html
 
 @SuppressLint("RestrictedApi")
-@Keep
 class StringUtilsMosi {
 
     companion object {
 
-         fun strToDigit20(value: String): String {
+        fun strToDigit20(value: String): String {
             return value.replace("[^0-9]".toRegex(), "")
         }
 
-         fun leftPad(str: String, length: Int, car: Char): String {
+        fun leftPad(str: String, length: Int, car: Char): String {
             return (str + String.format("%" + length + "s", "").replace(" ", car.toString())).substring(0, length)
         }
 
-         fun rightPad(str: String, length: Int, car: Char): String {
+        fun rightPad(str: String, length: Int, car: Char): String {
             return (str + String.format("%" + length + "s", "").replace(" ", car.toString())).substring(0, length)
         }
 
-         fun unConcatString(length: Int, value: String): String {
+        fun unConcatString(length: Int, value: String): String {
             return value.substring(length)
         }
 
-         fun getStringFromWindowsSystem(value: String) {
+        fun getStringFromWindowsSystem(value: String) {
 
         }
 
-         fun getBillAmount(billPaymentId: String): String {
+        fun getBillAmount(billPaymentId: String): String {
             var amount = ""
             var temp = ""
             if (billPaymentId.isNullOrEmpty() || billPaymentId.length < 6 || billPaymentId.length > 13)
@@ -50,7 +49,7 @@ class StringUtilsMosi {
             return amount
         }
 
-         fun getShaparakResponseMessage2(respCode: Int): String {
+        fun getShaparakResponseMessage2(respCode: Int): String {
             return when (respCode) {
                 -1 -> "کاربر از انجام تراکنش صرف نظر کرد"
                 0, 8, 16 -> " تراکنش موفق"
@@ -98,7 +97,7 @@ class StringUtilsMosi {
             }
         }
 
-         fun getShaparakResponseMessage(respCode: Int): String {
+        fun getShaparakResponseMessage(respCode: Int): String {
             return when (respCode) {
                 0 -> "عملیات موفق"
                 3 -> "پذیرنده نا معتبر"
@@ -170,7 +169,7 @@ class StringUtilsMosi {
         }
 
 
-         fun getJavaCardResponseMessage3(respCode: String): String {
+        fun getJavaCardResponseMessage3(respCode: String): String {
             return when (respCode) {
                 "63A0" -> "63 A0: PUK Blocked"
                 "63A1" -> "63 A1: PIN Blocked"
@@ -185,7 +184,7 @@ class StringUtilsMosi {
             }
         }
 
-         fun hexStringToByteArray2(s: String): ByteArray {
+        fun hexStringToByteArray2(s: String): ByteArray {
             val len = s.length
             val data = ByteArray(len / 2)
             var i = 0
