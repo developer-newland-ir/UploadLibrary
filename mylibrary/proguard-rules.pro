@@ -20,6 +20,7 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
--keepclassmembers class com.thunder.mylibrary.* {
+-keepclassmembernames class com.thunder.mylibrary.* {
     <methods>;
 }
+-keepnames class com.thunder.mylibrary.StringUtilsMosi
