@@ -19,7 +19,7 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
--keep public class com.thunder.mylibrary.** { *; }
+-keep public class com.thunder.mylibrary.StringUtilsMosi.** { *; }
 
 -keepnames class com.thunder.mylibrary.StringUtilsMosi { *; }
 -keepclassmembernames class com.thunder.mylibrary.* {
