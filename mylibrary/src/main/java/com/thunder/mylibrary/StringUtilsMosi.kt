@@ -1,7 +1,7 @@
 package com.thunder.mylibrary
 
 import android.annotation.SuppressLint
-
+import androidx.annotation.Keep
 
 /**
  * @author Created by M.Moradikia
@@ -12,6 +12,7 @@ import android.annotation.SuppressLint
 //https://commons.apache.org/proper/commons-lang/javadocs/api-2.6/org/apache/commons/lang/StringUtils.html
 
 @SuppressLint("RestrictedApi")
+@Keep
 class StringUtilsMosi {
 
     companion object {
