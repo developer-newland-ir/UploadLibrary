@@ -49,7 +49,7 @@ class StringUtilsMosi {
             return amount
         }
 
-        fun getShaparakResponseMessage2(respCode: Int): String {
+        private fun getShaparakResponseMessage2(respCode: Int): String {
             return when (respCode) {
                 -1 -> "کاربر از انجام تراکنش صرف نظر کرد"
                 0, 8, 16 -> " تراکنش موفق"
@@ -97,7 +97,7 @@ class StringUtilsMosi {
             }
         }
 
-        fun getShaparakResponseMessage(respCode: Int): String {
+        private fun getShaparakResponseMessage(respCode: Int): String {
             return when (respCode) {
                 0 -> "عملیات موفق"
                 3 -> "پذیرنده نا معتبر"
@@ -169,7 +169,7 @@ class StringUtilsMosi {
         }
 
 
-        fun getJavaCardResponseMessage(respCode: String): String {
+        private fun getJavaCardResponseMessage(respCode: String): String {
             return when (respCode) {
                 "63A0" -> "63 A0: PUK Blocked"
                 "63A1" -> "63 A1: PIN Blocked"
