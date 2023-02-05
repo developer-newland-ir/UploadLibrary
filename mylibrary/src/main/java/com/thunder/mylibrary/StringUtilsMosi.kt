@@ -36,8 +36,7 @@ class StringUtilsMosi {
 
         }
 
-
-        fun getBillAmount(billPaymentId: String): String {
+        private fun getBillAmount(billPaymentId: String): String {
             var amount = ""
             var temp = ""
             if (billPaymentId.isNullOrEmpty() || billPaymentId.length < 6 || billPaymentId.length > 13)
