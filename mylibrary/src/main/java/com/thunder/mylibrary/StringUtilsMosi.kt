@@ -16,7 +16,7 @@ class StringUtilsMosi {
 
     companion object {
 
-        fun strToDigit(value: String): String {
+        private fun strToDigit(value: String): String {
             return value.replace("[^0-9]".toRegex(), "")
         }
 
