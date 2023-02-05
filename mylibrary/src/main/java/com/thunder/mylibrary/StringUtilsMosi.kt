@@ -16,27 +16,27 @@ class StringUtilsMosi {
 
     companion object {
 
-        private fun strToDigit(value: String): String {
+         fun strToDigit(value: String): String {
             return value.replace("[^0-9]".toRegex(), "")
         }
 
-        private fun leftPad(str: String, length: Int, car: Char): String {
+         fun leftPad(str: String, length: Int, car: Char): String {
             return (str + String.format("%" + length + "s", "").replace(" ", car.toString())).substring(0, length)
         }
 
-        private fun rightPad(str: String, length: Int, car: Char): String {
+         fun rightPad(str: String, length: Int, car: Char): String {
             return (str + String.format("%" + length + "s", "").replace(" ", car.toString())).substring(0, length)
         }
 
-        private fun unConcatString(length: Int, value: String): String {
+         fun unConcatString(length: Int, value: String): String {
             return value.substring(length)
         }
 
-        private fun getStringFromWindowsSystem(value: String) {
+         fun getStringFromWindowsSystem(value: String) {
 
         }
 
-        private fun getBillAmount(billPaymentId: String): String {
+         fun getBillAmount(billPaymentId: String): String {
             var amount = ""
             var temp = ""
             if (billPaymentId.isNullOrEmpty() || billPaymentId.length < 6 || billPaymentId.length > 13)
@@ -49,7 +49,7 @@ class StringUtilsMosi {
             return amount
         }
 
-        private fun getShaparakResponseMessage2(respCode: Int): String {
+         fun getShaparakResponseMessage2(respCode: Int): String {
             return when (respCode) {
                 -1 -> "کاربر از انجام تراکنش صرف نظر کرد"
                 0, 8, 16 -> " تراکنش موفق"
@@ -97,7 +97,7 @@ class StringUtilsMosi {
             }
         }
 
-        private fun getShaparakResponseMessage(respCode: Int): String {
+         fun getShaparakResponseMessage(respCode: Int): String {
             return when (respCode) {
                 0 -> "عملیات موفق"
                 3 -> "پذیرنده نا معتبر"
@@ -169,7 +169,7 @@ class StringUtilsMosi {
         }
 
 
-        private fun getJavaCardResponseMessage3(respCode: String): String {
+         fun getJavaCardResponseMessage3(respCode: String): String {
             return when (respCode) {
                 "63A0" -> "63 A0: PUK Blocked"
                 "63A1" -> "63 A1: PIN Blocked"
@@ -184,7 +184,7 @@ class StringUtilsMosi {
             }
         }
 
-        private fun hexStringToByteArray2(s: String): ByteArray {
+         fun hexStringToByteArray2(s: String): ByteArray {
             val len = s.length
             val data = ByteArray(len / 2)
             var i = 0
