@@ -19,9 +19,9 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
-#-keep public class com.thunder.mylibrary.StringUtilsMosi.** { *; }
+-keep class com.thunder.mylibrary.StringUtilsManager.** { *; }
 
--keepclasseswithmembernames class com.thunder.mylibrary.StringUtilsMosi { *; }
+#-keepclasseswithmembernames class com.thunder.mylibrary.StringUtilsMosi { *; }
 #-keepclassmembernames class com.thunder.mylibrary.* {<methods>;}
 
 #https://stackoverflow.com/questions/49383069/proguard-keep-only-class-name-and-all-members-and-methods-inside-the-class
