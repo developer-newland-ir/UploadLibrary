@@ -21,7 +21,7 @@
 #-renamesourcefileattribute SourceFile
 #-keep public class com.thunder.mylibrary.StringUtilsMosi.** { *; }
 
--keepnames class com.thunder.mylibrary.** { *; }
+-keepclasseswithmembernames class com.thunder.mylibrary.StringUtilsMosi { *; }
 #-keepclassmembernames class com.thunder.mylibrary.* {<methods>;}
 
 #https://stackoverflow.com/questions/49383069/proguard-keep-only-class-name-and-all-members-and-methods-inside-the-class
