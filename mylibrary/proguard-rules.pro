@@ -21,6 +21,7 @@
 #-renamesourcefileattribute SourceFile
 
 -keep class com.thunder.mylibrary.StringUtilsManager { *; }
+-keep public class com.thunder.mylibrary.StringUtilsManager { *; }
 
 #-keepclasseswithmembernames class com.thunder.mylibrary.StringUtilsMosi { *; }
 #-keepclassmembernames class com.thunder.mylibrary.* {<methods>;}
