@@ -46,13 +46,11 @@ class StringUtilsManager {
         return StringUtilsMosi.getShaparakResponseMessage(respCode)
     }
 
-    fun getJavaCardResponseMessage3(respCode: String): String {
+    fun getJavaCardResponseMessage(respCode: String): String {
         return StringUtilsMosi.getJavaCardResponseMessage3(respCode)
     }
 
-    fun hexStringToByteArray2(s: String): ByteArray {
-
+    fun hexStringToByteArray(s: String): ByteArray {
         return StringUtilsMosi.hexStringToByteArray2(s)
     }
-
 }
