@@ -4,12 +4,22 @@ plugins {
 }
 
 android {
+
+    signingConfigs {
+        Sadad {
+            storeFile file('F:\\AndroidStudioProjects\\NewlandPosApp\\ThunderLight_Sadad.jks')
+            keyAlias 'ThunderLight_Sadad'
+            storePassword 'TLs@dad2022'
+            keyPassword 'TLs@dad2022'
+        }
+    }
+
     namespace 'com.example.uploadlibrary'
     compileSdk 33
 
     defaultConfig {
         applicationId "com.example.uploadlibrary"
-        minSdk 24
+        minSdk 21
         targetSdk 33
         versionCode 1
         versionName "1.0"
@@ -19,7 +29,27 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
+            crunchPngs true
+
+            /*minifyEnabled false
+            shrinkResources false
+            debuggable true
+            crunchPngs false*/
+            /*proguard_list.each {
+                pro_guard -> proguardFile pro_guard
+            }*/
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfigs.Sadad
+        }
+        debug {
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
+            crunchPngs true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -48,7 +78,5 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
-    //implementation project(path: ':mylibrary')
-
-    implementation 'com.github.developer-newland-ir:UploadLibrary:1.0'
+    implementation project(path: ':mylibrary')
 }

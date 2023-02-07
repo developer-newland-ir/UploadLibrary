@@ -5,11 +5,20 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        Sadad {
+            storeFile file('F:\\AndroidStudioProjects\\NewlandPosApp\\ThunderLight_Sadad.jks')
+            keyAlias 'ThunderLight_Sadad'
+            storePassword 'TLs@dad2022'
+            keyPassword 'TLs@dad2022'
+        }
+    }
+
     namespace 'com.thunder.mylibrary'
     compileSdk 33
 
     defaultConfig {
-        minSdk 24
+        minSdk 21
         targetSdk 33
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -18,20 +27,28 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled true
-            //useProguard true
-            //shrinkResources true
             debuggable false
+            minifyEnabled true
+            //shrinkResources true
+            crunchPngs true
 
+            /*minifyEnabled false
+            shrinkResources false
+            debuggable true
+            crunchPngs false*/
+            /*proguard_list.each {
+                pro_guard -> proguardFile pro_guard
+            }*/
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            //signingConfigs.Sadad
+            signingConfigs.Sadad
         }
         debug {
-            minifyEnabled true
-            //useProguard false
             debuggable false
-            proguardFiles getDefaultProguardFile('proguard-android.txt')
+            minifyEnabled true
+            //shrinkResources true
+            crunchPngs true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
     compileOptions {
@@ -55,7 +72,7 @@ afterEvaluate {
 
                 groupId = 'com.github.developer-newland-ir'
                 artifactId = 'mylibrary'
-                version = '3.4'
+                version = '3.5'
             }
         }
     }

@@ -33,7 +33,6 @@ class StringUtilsMosi {
         }
 
         fun getStringFromWindowsSystem(value: String) {
-
         }
 
         fun getBillAmount(billPaymentId: String): String {
@@ -167,7 +166,6 @@ class StringUtilsMosi {
                 else -> "خطای نامشخص"
             }
         }
-
 
         fun getJavaCardResponseMessage3(respCode: String): String {
             return when (respCode) {
