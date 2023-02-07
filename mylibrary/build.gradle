@@ -27,7 +27,6 @@ android {
 
     buildTypes {
         release {
-            debuggable false
             minifyEnabled true
             //shrinkResources true
             crunchPngs true
@@ -72,7 +71,7 @@ afterEvaluate {
 
                 groupId = 'com.github.developer-newland-ir'
                 artifactId = 'mylibrary'
-                version = '3.5'
+                version = '3.6'
             }
         }
     }
