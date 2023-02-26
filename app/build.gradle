@@ -5,6 +5,7 @@ plugins {
 
 android {
 
+/*
     signingConfigs {
         Sadad {
             storeFile file('F:\\AndroidStudioProjects\\NewlandPosApp\\ThunderLight_Sadad.jks')
@@ -13,6 +14,7 @@ android {
             keyPassword 'TLs@dad2022'
         }
     }
+*/
 
     namespace 'com.example.uploadlibrary'
     compileSdk 33
@@ -28,25 +30,25 @@ android {
     }
 
     buildTypes {
-        release {
+        /*release {
             debuggable false
             minifyEnabled true
             shrinkResources true
             crunchPngs true
 
-            /*minifyEnabled false
+            *//*minifyEnabled false
             shrinkResources false
             debuggable true
-            crunchPngs false*/
-            /*proguard_list.each {
+            crunchPngs false*//*
+            *//*proguard_list.each {
                 pro_guard -> proguardFile pro_guard
-            }*/
+            }*//*
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             signingConfigs.Sadad
-        }
+        }*/
         debug {
-            debuggable false
+            debuggable true
             minifyEnabled true
             shrinkResources true
             crunchPngs true

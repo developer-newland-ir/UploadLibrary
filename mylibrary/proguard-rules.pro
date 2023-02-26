@@ -20,8 +20,20 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
--keep class com.thunder.mylibrary.StringUtilsManager { *; }
--keep public class com.thunder.mylibrary.StringUtilsManager { *; }
+#-keep class com.thunder.mylibrary.StringUtilsManager { *; }
+-keep public class com.thunder.mylibrary.StringUtilsManager { public *; }
+
+
+#keeps the names of all public classes in the specified package:
+-keep public class com.myapp.customcomponents.*
+
+# keeps the names of all public classes in the specified package and its subpackages:
+-keep public class com.myapp.customcomponents.**
+
+#keeps the names of all public/protected classes/fields/methods in the specified package and its subpackages:
+-keep public class com.myapp.customcomponents.** {
+  public protected *;
+}
 
 #-keepclasseswithmembernames class com.thunder.mylibrary.StringUtilsMosi { *; }
 #-keepclassmembernames class com.thunder.mylibrary.* {<methods>;}
