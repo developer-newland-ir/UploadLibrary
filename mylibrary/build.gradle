@@ -8,7 +8,7 @@ android {
 
     signingConfigs {
         Sadad {
-            storeFile file('F:\\AndroidStudioProjects\\NewlandPosApp\\ThunderLight_Sadad.jks')
+            storeFile file('..\\mylibrary\\ThunderLight_Sadad.jks')
             keyAlias 'ThunderLight_Sadad'
             storePassword 'TLs@dad2022'
             keyPassword 'TLs@dad2022'
