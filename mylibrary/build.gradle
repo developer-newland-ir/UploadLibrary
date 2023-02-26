@@ -34,7 +34,7 @@ android {
             crunchPngs false
 */
             minifyEnabled true
-            shrinkResources false
+            shrinkResources true
             debuggable false
             crunchPngs true
 
