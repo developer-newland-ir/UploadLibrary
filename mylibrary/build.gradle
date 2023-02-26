@@ -45,7 +45,7 @@ android {
         }*/
         debug {
             minifyEnabled true
-            shrinkResources true
+            //shrinkResources true// cannot be used for libraries.
             crunchPngs false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
