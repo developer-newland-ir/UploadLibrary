@@ -6,14 +6,14 @@ plugins {
 
 android {
 
-/*    signingConfigs {
+    signingConfigs {
         Sadad {
             storeFile file('F:\\AndroidStudioProjects\\NewlandPosApp\\ThunderLight_Sadad.jks')
             keyAlias 'ThunderLight_Sadad'
             storePassword 'TLs@dad2022'
             keyPassword 'TLs@dad2022'
         }
-    }*/
+    }
 
     namespace 'com.thunder.mylibrary'
     compileSdk 33
@@ -24,25 +24,27 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
+        signingConfig signingConfigs.Sadad
     }
 
     buildTypes {
-        /*release {
-            minifyEnabled false
+        release {
+            /*minifyEnabled false
             //shrinkResources true
             crunchPngs false
-
-            *//*minifyEnabled false
+*/
+            minifyEnabled false
             shrinkResources false
             debuggable true
-            crunchPngs false*//*
-            *//*proguard_list.each {
+            crunchPngs false
+
+            /*proguard_list.each {
                 pro_guard -> proguardFile pro_guard
-            }*//*
+            }*/
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            //signingConfigs.Sadad
-        }*/
+            signingConfigs.Sadad
+        }
         debug {
             minifyEnabled true
             //shrinkResources true// cannot be used for libraries.
