@@ -33,9 +33,9 @@ android {
             //shrinkResources true
             crunchPngs false
 */
-            minifyEnabled false
+            minifyEnabled true
             shrinkResources false
-            debuggable true
+            debuggable false
             crunchPngs false
 
             /*proguard_list.each {
@@ -73,7 +73,7 @@ afterEvaluate {
 
                 groupId = 'com.github.developer-newland-ir'
                 artifactId = 'mylibrary'
-                version = '3.8'
+                version = '4.3'
             }
         }
     }
