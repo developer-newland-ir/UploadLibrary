@@ -35,7 +35,7 @@ android {
 */
             minifyEnabled true
             //shrinkResources false
-            debuggable false
+            debuggable true
             crunchPngs true
 
             /*proguard_list.each {
