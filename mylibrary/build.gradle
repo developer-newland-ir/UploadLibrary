@@ -33,7 +33,7 @@ android {
             //shrinkResources true
             crunchPngs false
 */
-            minifyEnabled true
+            minifyEnabled false
             //shrinkResources false
             debuggable true
             crunchPngs true
@@ -73,7 +73,7 @@ afterEvaluate {
 
                 groupId = 'com.github.developer-newland-ir'
                 artifactId = 'mylibrary'
-                version = '5.3'
+                version = '5.5'
             }
         }
     }
