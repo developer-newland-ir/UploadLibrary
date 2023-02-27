@@ -35,9 +35,9 @@ android {
              shrinkResources true
              crunchPngs true*/
 
-            minifyEnabled false
-            shrinkResources false
-            debuggable true
+            minifyEnabled true
+            shrinkResources true
+            debuggable false
             crunchPngs false
 
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
@@ -45,7 +45,7 @@ android {
             signingConfigs.Sadad
         }
         debug {
-            debuggable true
+            debuggable false
             minifyEnabled true
             shrinkResources true
             crunchPngs true

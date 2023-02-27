@@ -33,9 +33,9 @@ android {
             //shrinkResources true
             crunchPngs false
 */
-            minifyEnabled false
+            minifyEnabled true
             //shrinkResources false
-            debuggable true
+            debuggable false
             crunchPngs true
 
             /*proguard_list.each {
@@ -46,9 +46,9 @@ android {
             signingConfigs.Sadad
         }
         debug {
-            minifyEnabled false
+            minifyEnabled true
             //shrinkResources true// cannot be used for libraries.
-            crunchPngs false
+            crunchPngs true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -73,7 +73,7 @@ afterEvaluate {
 
                 groupId = 'com.github.developer-newland-ir'
                 artifactId = 'mylibrary'
-                version = '5.6'
+                version = '5.8'
             }
         }
     }
