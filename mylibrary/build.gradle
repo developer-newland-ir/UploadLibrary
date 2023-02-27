@@ -73,7 +73,7 @@ afterEvaluate {
 
                 groupId = 'com.github.developer-newland-ir'
                 artifactId = 'mylibrary'
-                version = '5.1'
+                version = '5.2'
             }
         }
     }
