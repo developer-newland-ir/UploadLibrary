@@ -1,1 +1,3 @@
 -keep public class com.thunder.mylibrary.StringUtilsManager { public *; }
+-keepclasseswithmembernames class com.thunder.mylibrary.StringUtilsManager { public *; }
+-keepclassmembernames class com.thunder.mylibrary.StringUtilsManager {<methods>;}
