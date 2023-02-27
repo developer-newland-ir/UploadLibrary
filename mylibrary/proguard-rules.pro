@@ -22,7 +22,7 @@
 
 #-keep class com.thunder.mylibrary.StringUtilsManager { *; }
 -keep public class com.thunder.mylibrary.StringUtilsManager { public *; }
-
+-keepclasseswithmembernames class com.thunder.mylibrary.StringUtilsManager { public *; }
 
 #keeps the names of all public classes in the specified package:
 -keep public class com.myapp.customcomponents.*
