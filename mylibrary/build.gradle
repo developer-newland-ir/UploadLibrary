@@ -46,7 +46,7 @@ android {
             signingConfigs.Sadad
         }
         debug {
-            minifyEnabled true
+            minifyEnabled false
             //shrinkResources true// cannot be used for libraries.
             crunchPngs false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
@@ -73,7 +73,7 @@ afterEvaluate {
 
                 groupId = 'com.github.developer-newland-ir'
                 artifactId = 'mylibrary'
-                version = '5.5'
+                version = '5.6'
             }
         }
     }
