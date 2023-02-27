@@ -30,14 +30,14 @@ android {
 
     buildTypes {
         release {
-           /* debuggable false
+            /* debuggable false
+             minifyEnabled true
+             shrinkResources true
+             crunchPngs true*/
+
             minifyEnabled true
             shrinkResources true
-            crunchPngs true*/
-
-            minifyEnabled false
-            shrinkResources false
-            debuggable true
+            debuggable false
             crunchPngs false
 
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'

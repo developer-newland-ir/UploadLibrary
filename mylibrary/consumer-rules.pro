@@ -1,0 +1,1 @@
+-keep public class com.thunder.mylibrary.StringUtilsManager { public *; }
